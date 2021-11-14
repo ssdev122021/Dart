@@ -30,4 +30,25 @@ void main(){
     //for each loop
     var lst1 = [1,2,3,4,5];
     lst1.forEach((var num)=> print(num));
+    
+    // continue statement
+    var ctr = 0;
+    while(ctr < 10){
+        ctr = ctr + 1;
+        if(ctr == 5){
+            print("5 is skipped");
+            continue;
+        }
+        print('Number is ${ctr}');
+    }
+    
+    // break statement
+    int count = 1;
+	while (count <= 10) {
+		count++;
+		if (count == 4) {
+			break;
+		}
+	}
+   
 }
