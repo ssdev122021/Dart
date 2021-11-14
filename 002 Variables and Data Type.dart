@@ -17,3 +17,12 @@ void main(){
    print(heart_symbol);  
    print(laugh_symbol);  
 }
+
+// Built-in Data types  Number
+// Strings
+// Boolean
+// Lists
+// Maps
+// Runes
+// Symbols
+// dynamic
