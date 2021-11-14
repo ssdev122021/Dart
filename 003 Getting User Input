@@ -1,0 +1,13 @@
+// importing dart:io file
+import 'dart:io';
+ 
+void main()
+{
+    print("Enter your name?");
+   
+   // Stdin class allows the user to read data from standard input in both synchronous and asynchronous ways.  
+   // The method readLineSync() is one of the methods used to take input from the user.
+    String? name = stdin.readLineSync(); 
+
+    print("Hello, $name");
+}
