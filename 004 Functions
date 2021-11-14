@@ -1,0 +1,78 @@
+// Function with no argument and no return type
+// void  means it is not returning and anything 
+void sayName(){
+  print("Shine Shine");
+}
+ 
+// Function with no arguments but return type
+// int means it is returning int type
+int age(){
+  int age = 23;
+  return age;
+}
+
+// Function with arguments but no return type
+gretting(String arg){
+  print(arg);
+}
+
+// Function with arguments and with return type
+int add(int firstNumber, int secondNumber){
+  return (firstNumber + secondNumber);
+}
+
+//Lambda Functions or arrow functions
+int add1(int fn, int sn) => fn - sn;
+
+
+// Optional Positional Parameter
+// square brackets [] are used to specify optional positional parameters.`
+int pow(int x, [int y = 2]) {
+  int r = 1;
+  for (int i = 0; i < 2; i++) {
+    r *= x;
+  }
+  return r;
+}
+
+// Optional named parameters
+// Optional named parameters are specified insice curly {} brackets
+void info(String name, {occupation: 'occupation'}) {
+    print("$name is a $occupation");
+}
+
+// Recursive function
+int fact(int n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  }
+  return n * fact(n - 1);
+}
+
+void main(){
+    sayName();
+    print(age());
+    gretting('Hi');
+    print(add(4,5));
+    print(add1(13, 5));
+   
+    var list = ["James","Patrick","Mathew","Tom"];
+    // anonymous functions
+    print("Example of anonymous function");  
+    list.forEach((item) {  
+        print('${list.indexOf(item)}: $item');  
+    });
+    
+   //Optional positional parameters
+   print(pow(2, 3));
+   print(pow(3));
+    
+    // Optional named parameters
+    var name = "John Doe";
+    var occupation = "carpenter";
+    info(name, occupation: occupation);
+    
+    // recursive functions
+    print(fact(7));
+    
+}
