@@ -1,0 +1,108 @@
+void main(){  
+    
+  print("Example of Arithmetic operators");  
+  var n1 = 10;  
+  var n2 = 5;  
+  print("n1+n2 = ${n1+n2}");  
+  print("n1-n2 = ${n1-n2}");  
+  print("n1*n2 = ${n1*n2}");  
+  print("n1/=n2 = ${n1/n2}");   
+  print("n1%n2 = ${n1%n2}");     
+    
+    
+  print('');
+  print("Example of Assignment operators");  
+  var p1 = 10;  
+  var p2 = 5;  
+    
+  p1+=p2;  
+  print("p1+=p2 = ${p1}");  
+    
+  p1-=p2;  
+  print("p1-=p2 = ${p1}");  
+    
+  p1*=p2;  
+  print("p1*=p2 = ${p1}");  
+    
+  p1~/=p2;  
+  print("p1~/=p2 = ${p1}");  
+  n1%=n2;  
+  print("p1%=p2 = ${p1}");   
+    
+    
+  print('');
+  print("The example of Relational Operator");  
+  var a = 30;  
+  var b = 20;  
+    
+  var res = a>b;  
+  print("a is greater than b: "+res. toString()); 
+  
+  var res0 = a<b;  
+  print("a is less than b: "+res0. toString());  
+  
+  var res1 = a>=b;  
+  print("a is greater than or equal to b: "+res1. toString());  
+  
+  var res2 = a<=b;  
+  print("a is less than and equal to b: "+res2. toString());  
+  
+  var res3 = a!= b;  
+  print("a is not equal to  b: "+res3. toString());  
+  
+  var res4 = a==b;  
+  print("a is  equal to  b: "+res4. toString());    
+    
+    
+  print('');
+  print("the example of Type Test Operators");  
+  var num = 10;  
+  var name = "shineshine";  
+  print(num is int);    
+  print(name is! String ); 
+    
+
+  print('');
+  print("Example of the logical operators");  
+  bool bool_val1 = true, bool_val2 = false;   
+    
+  var val1 = bool_val1 && bool_val2;  
+  print(val1);  
+    
+  var val2 = bool_val1 || bool_val2;  
+  print(val2);  
+    
+  var val3 = !(bool_val1 || bool_val2);  
+  print(val3);    
+    
+    
+  print('');
+  print("Example of Ternary Operator");  
+  var t = 30;   
+  var output = t > 42 ? "value greater than 10":"value lesser than equal to 30";   
+  print(output);       
+  
+  
+  print("The example of Relational Operator");  
+  var c = 30;  
+  var d = 20;  
+    
+  var ult = a>b;  
+  print("c is greater than d: "+ult. toString());  // We will learn the toString in next tutorial  
+  
+  var ult0 = a<b;  
+  print("c is less than d: "+ult0. toString());  
+  
+  var ult1 = a>=b;  
+  print("c is greater than or equal to d: "+ult1. toString());  
+   
+  var ult2 = a<=b;  
+  print("c is less than and equal to d: "+ult2. toString());  
+  
+  var ult3 = a!= b;  
+  print("c is not equal to  d: "+ult3. toString());  
+  
+  var ult4 = a==b;  
+  print("c is  equal to  d: "+ult4. toString());  
+    
+}  
