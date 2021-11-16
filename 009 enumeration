@@ -1,0 +1,15 @@
+// used to define named constant values
+// enumeration is to store finite data members under the same type definition.
+enum DaysofWeek{
+    Sun, // identifier 
+    Mon,
+    Tue,
+    Wed, 
+    Thu, 
+    Fri,
+    Sat
+ }
+void main(){ 
+    print(DaysofWeek.values); 
+    DaysofWeek.values.forEach((v) => print('value: $v, index: ${v.index}'));
+}
