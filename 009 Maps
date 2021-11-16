@@ -57,4 +57,19 @@ void main() {
   words.clear();
   print(words); 
     
+  // map iteration  
+  words.forEach((key, val) {
+    print('{ key: $key, value: $val}');
+  });  
+   
+  // determine if a map contains a specific key and value.  
+  // similar to js array filter
+  var myMap = {1: 'Apple', 2: 'Orange', 3: 'Banana'};
+  print(myMap.containsKey(1));
+  print(myMap.containsKey(3));
+
+  print(myMap.containsValue('Apple'));
+  print(myMap.containsValue('Cherry')); 
+ 
+    
 }   
