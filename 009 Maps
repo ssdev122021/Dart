@@ -1,0 +1,60 @@
+void main() {   
+    
+   // declare a Map using map literal
+   var person1 = {'name':'Shine','age':'23'};   
+   print(person1); 
+    
+   // declare a Map using map Constructor
+   var person2 = new Map();   
+   person2['name'] = 'Shine Shine';   
+   person2['age'] = 23;   
+   print(person2);   
+    
+   // add value with square bracket and passed the new key
+   person2['work'] = 'dev';   
+   print(person2); 
+    
+   // add values with addAll method    
+   person2.addAll({'phone':'008808232','email':'shineshine@gmail.com'});    
+    
+   // access Specific value 
+   print(person2['name']);
+    
+    
+  // Get all Keys  
+  print("The keys are : ${person2.keys}");  
+    
+  // Get all values  
+  print("The values are : ${person2.values}");  
+   
+  // Length of Map  
+  print("The length is : ${person2.length}");  
+  
+  //isEmpty   
+  print(person2.isEmpty);  
+  
+  //isNotEmpty   
+  print(person2.isNotEmpty); 
+    
+  var words = {
+    1: 'sky',
+    2: 'fly',
+    3: 'ribbon',
+    4: 'falcon',
+    5: 'rock',
+    6: 'ocean',
+    7: 'cloud'
+  };
+    
+  // remove specific Entries
+  words.remove(1);
+  print(words);
+  // deletes all pairs whose values (words) begin with specific letter
+  words.removeWhere((key, value) => value.startsWith('f'));
+  print(words);
+    
+  // removes all pairs
+  words.clear();
+  print(words); 
+    
+}   
