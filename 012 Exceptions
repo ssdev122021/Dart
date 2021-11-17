@@ -1,0 +1,50 @@
+/*
+try Block : The try block is used to hold the block of code that might be thrown an exception.`
+on block : The on block is used to when we require specifying the exceptions. `
+catch block : The catch block is used to when handler needs the exception object.`
+finally Block :The finally block always executes whether there is exception occur or not. It executes unconditionally after the try/on/catch. 
+*/
+
+import 'dart:io';
+
+void main() {    
+    
+   print('\ntry-on block');
+   int x = 12;   
+   int y = 0;   
+   try {  
+      int res = x ~/ y;   
+   }   
+   on IntegerDivisionByZeroException {   
+      print('Cannot divide by zero');   
+   } 
+   finally { 
+        print('Finally block executed'); 
+    }  
+    
+   
+   print('\ntry-catch block');
+   print('Enter Number');
+   try {   
+       int? n = int.parse(stdin.readLineSync()!);
+   }   
+   catch(E) {   
+      print(E);   
+   }  
+   finally { 
+      print('Finally block executed'); 
+   } 
+    
+   print('\nthrow an exception ');
+    try {   
+        check_marks(-10);   
+    }   
+    catch(e) {   
+        print('The marks cannot be negative');   
+    }   
+}
+void check_marks(int marks) {   
+    if(marks<0) {   
+        throw new FormatException();  // Raising explanation externally  
+    }
+} 
