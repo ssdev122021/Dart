@@ -1,4 +1,5 @@
 void main() {  
+    print("If Statement");
     var marks = 74;     
     if(marks > 85)  {  
         print("Excellent");  
@@ -9,4 +10,23 @@ void main() {
     }else {  
         print("Average");  
     }  
+    
+    print("\nswitch Statement");
+    print("Dart Switch case statement is used to avoid the long chain of the if-else statement");
+    //target value
+    int n = 3;  
+    switch (n) {  
+        case 1:  
+            print("Value is 1");  
+            break;  
+        case 2:  
+            print("Value is 2");  
+            break;  
+        case 3:  
+            print("Value is 3");  
+            break;  
+        default:  
+            print("Out of range");  
+            break;  
+        }  
 }  
