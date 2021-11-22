@@ -1,4 +1,4 @@
-name : Parsing_xml_example
+name : ProjectName
 environment:
   sdk: ">2.0.0"
 dependencies: 
