@@ -1,8 +1,6 @@
 // Asynchronous programming basically means no waiting or non-blocking programming model.
 
-
 // to make async opreation use Future object 
-
 // Future<return_type> FunctionName(){return Future}
 
 Future<String> delayedPrint(int seconds, String msg) {
