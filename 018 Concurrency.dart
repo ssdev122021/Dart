@@ -11,9 +11,9 @@ print('${message} From Isolate');
 }
 
 void main(){
-    Isolate.spawn(function_name,'Geeks!!');
-    Isolate.spawn(function_name,'For!!');
-    Isolate.spawn(function_name,'Geeks!!');
+    Isolate.spawn(function_name,'Task 1 from Isolate');
+    Isolate.spawn(function_name,'Task 2 from Isolate');
+    Isolate.spawn(function_name,'Task 3 from Isolate');
     print('Normal Print 1');
     print('Normal Print 2');
     print('Normal Print 3');
