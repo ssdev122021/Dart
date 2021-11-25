@@ -37,7 +37,7 @@ int pow(int x, [int y = 2]) {
 
 // Optional named parameters
 // Optional named parameters are specified insice curly {} brackets
-void info(String name, {occupation: 'occupation'}) {
+void info(String name, {String? occupation}) {
     print("$name is a $occupation");
 }
 
@@ -68,8 +68,8 @@ void main(){
    print(pow(3));
     
     // Optional named parameters
-    var name = "John Doe";
-    var occupation = "carpenter";
+    var name = "Shine Shine";
+    var occupation = "Web Developer";
     info(name, occupation: occupation);
     
     // recursive functions
