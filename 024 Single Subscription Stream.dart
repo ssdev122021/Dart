@@ -1,12 +1,15 @@
 /* 
 * A Stream  is a sequence of asynchronous data  events instead of single events. A Stream provides a way to receive a sequence of events.
 * Streams emit data events(or elements), error events, and done events to notify the end of the event flow.
-
+*
 * We can create Stream with StreamController constructor.
 * stream method that returns a stream object
 * we can add data into the stream pipe with streamController.sink.add()
 * streamController.addError() method If an error occurs and your streams.
 * To close the stream use streamController.close()
+*
+* Single subscription stream can only be listened to once
+* Single Subscription Stream can't loose listening data
 */
 
 
