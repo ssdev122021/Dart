@@ -40,6 +40,7 @@ void main(){
     // Adding an error event 
 	streamController.addError('Error!');
 
-	// Closing the stream 
-	streamController.close();
+   // Closing the stream 
+   streamController.close();
+
 }
